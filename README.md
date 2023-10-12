@@ -13,6 +13,8 @@ deno install --allow-read --allow-write --allow-env --unstable https://deno.land
 
 This will install Horcrux on your system and allow you to run it from anywhere in your terminal.
 
+You can also doenload the [last release](https://github.com/barcia/horcrux/releases) binary
+
 ## Usage
 
 To use Horcrux, run the following command in your terminal:
