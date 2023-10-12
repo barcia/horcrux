@@ -1,13 +1,10 @@
 import { crypto } from "../../deps.js";
-import { load } from "../../deps.js";
 import * as mod from "https://deno.land/std@0.203.0/encoding/hex.ts";
 
-await load({export: true})
-
-const privateKeyHex = Deno.env.get("PRIVATE_KEY");
+const privateKeyHex = "ea28519adc8a4735af3fb1f23204cc6f";
 const privateKey = mod.decodeHex(privateKeyHex);
 
-const ivHex = Deno.env.get("IV");
+const ivHex = "762b4d64bac09b672015dfef0ae424a9";
 const iv = mod.decodeHex(ivHex);
 
 const key = await crypto.subtle.importKey(

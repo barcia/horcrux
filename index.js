@@ -1,9 +1,7 @@
-import { parse, load } from "./deps.js";
+import { parse } from "./deps.js";
 import { create, restore, version } from "./src/commands/_index.js";
 import config from "./config.js";
 import * as help from "./src/utils/help.js";
-
-await load({export: true})
 
 const args = parse(Deno.args, {
 	boolean: ["help"],
